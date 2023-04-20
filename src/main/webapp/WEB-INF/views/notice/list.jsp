@@ -59,7 +59,7 @@
 					<c:forEach items="${noticeList}" var="n"> 
 						<tr onclick="fnDetail(${n.notice_no})">
 							<td>${n.notice_no}</td>
-							<td>${n.title}		
+							<td>${n.title}</td>
 						</tr>
 					</c:forEach>				
 				</tr>

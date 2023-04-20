@@ -62,9 +62,26 @@
 	<div id="edit_screen">
 		<div style="cursor: pointer;" onclick="fnBack()">← 뒤로 가기</div>
 		<h1>공지사항 편집하기</h1>
-		<form>
-			
-		</form>
+		<div>
+			<label for="gubun" value="${n.gubun}">구분</label>
+			<select>
+				<option value="2">일반</option>
+				<option value="1">긴급</option>
+			</select>
+		</div>
+		<div>
+			<label for="title">제목</label>
+			<input type="text" id="title" name="title" value="${n.title}">
+		</div>
+		<div>
+			<div><label for="content">내용</label></div>
+			<textarea id="content" name="content">${n.content}</textarea>
+		</div>
+		<div>
+			<input type="hidden" name="notice_no" value="${n.notice_no}">
+			<button>편집완료</button>
+			<input type="button" value="목록" onclick="fnList()">
+		</div>
 	</div>
 	
 </body>
